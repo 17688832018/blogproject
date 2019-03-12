@@ -1,0 +1,25 @@
+# 正式编写步骤:
+    1.配置url
+    2.models
+    3.模板
+#创建工程
+django-admin startprogect blogproject
+# 创建app包
+python manage.py startapp blog
+# 将新创建的模型迁移数据库
+python manage.py makemigrations
+python manage.py migrate
+# 创建数据库
+python manage.py migrate
+# pycharm中进入虚拟环境
+source /home/user001/GitPro/blog/blogproject/blog_env/bin/activate
+# 退出虚拟环境
+deactivate
+# 打开服务器
+python manage.py runserver
+# 进入shell命令交互栏
+python manage.py shell
+# 创建搜索的索引文件:
+python manage.py rebuild_index
+# 创建超级用户 用于admin后台登录和管理
+python manage.py createsuperuser
